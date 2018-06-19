@@ -6,9 +6,10 @@ class ApartmentSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            'https://dubai.dubizzle.com/property-for-rent/residential/apartmentflat/2015/8/5/huge-4-br-on-a-high-floor-now-available-2/?related_ads=1&back=ZHViYWkuZHViaXp6bGUuY29tL3Byb3BlcnR5LWZvci1yZW50L3Jlc2lkZW50aWFsL2FwYXJ0bWVudGZsYXQv',
-
+            'https://dubai.dubizzle.com/en/property-for-rent/residential/apartmentflat'
         ]
+        for page in range(1, 40, 1):
+            urls.append('https://dubai.dubizzle.com/en/property-for-rent/residential/apartmentflat/?page=' + str(page))
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
 
@@ -21,7 +22,7 @@ class ApartmentSpider(scrapy.Spider):
                     'div/div/div/div[2]/a/div[2]/div[2]/div/div/div/div/div/span/text()').extract(),
                 'updatetime': quote.xpath(
                     'div/div/div/div[2]/a/div[2]/div[2]/div/div/div/div[2]/text()').extract(),
-                
+
             }
 
         next_page = response.css('li.next a::attr("href")').extract_first()

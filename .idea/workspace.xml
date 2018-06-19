@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca38743c-6959-4c1e-ad3d-1d527ad0b33e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apartment/spiders/apartment_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/apartment/spiders/apartment_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apartment/spiders/quotes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apartment/spiders/quotes.json" beforeDir="false" afterPath="$PROJECT_DIR$/apartment/spiders/quotes.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,17 +26,15 @@
       <file leaf-file-name="apartment_spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apartment/spiders/apartment_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="450">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quotes-apartmentflat.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apartment/spiders/quotes-apartmentflat.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-351" />
-          </provider>
+      <file leaf-file-name="quotes.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apartment/spiders/quotes.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -124,6 +120,14 @@
       <option name="presentableId" value="Default" />
       <updated>1529420348849</updated>
     </task>
+    <task id="LOCAL-00001" summary="add place, update time">
+      <created>1529424435827</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529424435828</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -171,12 +175,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add place, update time" />
+    <option name="LAST_COMMIT_MESSAGE" value="add place, update time" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apartment/spiders/quotes-apartmentflat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apartment/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -184,17 +187,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment/spiders/quotes.json">
+    <entry file="file://$PROJECT_DIR$/apartment/spiders/quotes-apartmentflat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="1" />
-        </state>
+        <state relative-caret-position="-351" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apartment/spiders/quotes.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/apartment/spiders/apartment_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
