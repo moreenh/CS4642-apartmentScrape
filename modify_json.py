@@ -12,9 +12,13 @@ for i in range(len(data)):
         entry['title'] = data[i]['title'][j]
         entry['updatetime'] = data[i]['updatetime'][j]
         entry['price'] = data[i]['price'][j]
-        entry['place'] = data[i]['place'][j]
         entry['photocount'] = data[i]['photocount'][j]
+        entry['bedroom'] = data[i]['bedroom'][j] + data[i]['bedroom'][j + 1]
+        entry['bathroom'] = data[i]['bathroom'][j] + data[i]['bathroom'][j + 1] + data[i]['bathroom'][j + 2] + \
+                            data[i]['bathroom'][j + 3]
+        # entry['cityaddress'] = data[i]['add1'][j]
+        # entry['squareroot'] = data[i]['squareroot'][j]
         obj.append(entry)
 
-print (len(obj))
+json.dumps(obj, feedsjson)
 print obj
