@@ -24,20 +24,21 @@ class ApartmentSpider(scrapy.Spider):
                 #     'div/div/div/div[2]/a/div[2]/div[2]/div/div/div/div[2]/text()').extract(),
                 # 'place': quote.xpath(
                 #     '//*[contains(concat( " ", @class, " " ), concat( " ", "place", " " ))]/h2/text()').extract(),
+
                 'title': quote.xpath(
-                    '//*[contains(concat( " ", @class, " " ), concat( " ", "en", " " ))]/text()').extract_first(),
+                    '//*[contains(concat( " ", @class, " " ), concat( " ", "en", " " ))]/text()').extract(),
                 'place': quote.xpath(
-                    '//*[contains(concat( " ", @class, " " ), concat( " ", "place", " " ))]/span/text()').extract_first(),
+                    '//*[contains(concat( " ", @class, " " ), concat( " ", "place", " " ))]/span/text()').extract(),
                 'updatetime': quote.xpath(
-                    '//*[contains(concat( " ", @class, " " ), concat( " ", "timeago", " " ))]/text()').extract_first(),
+                    '//*[contains(concat( " ", @class, " " ), concat( " ", "timeago", " " ))]/text()').extract(),
                 'price': quote.xpath(
-                    '//*[contains(concat( " ", @class, " " ), concat( " ", "price", " " ))]/text()').extract_first(),
+                    '//*[contains(concat( " ", @class, " " ), concat( " ", "price", " " ))]/text()').extract(),
                 # 'logo': quote.xpath('//img/src').extract(),
                 'photocount': quote.xpath(
-                    '//*[contains(concat( " ", @class, " " ), concat( " ", "count_value", " " ))]/text()').extract_first()
+                    '//*[contains(concat( " ", @class, " " ), concat( " ", "count_value", " " ))]/text()').extract(),
 
             }
 
-            next_page = response.css('li.next a::attr("href")').extract_first()
+            next_page = response.css('li.next a::attr("href")').extract()
             if next_page is not None:
                 yield response.follow(next_page, self.parse)
